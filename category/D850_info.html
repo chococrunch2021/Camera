@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./../material/공통스타일.css" type="text/css" rel="stylesheet" />
+    <script>
+        win = null;
+        function move() {
+            var n = document.getElementById("research");
+
+            if (n.value == "a700") {
+                window.location.href = "a700_info.html"
+            }
+            else if (n.value == "m100") {
+                window.location.href = "m100_info.html"
+            }
+            else if (n.value == "mark5") {
+
+                window.location.href = "마크5_info.html"
+            }
+            else if (n.value == "a9") {
+                window.location.href = "알파나인_info.html"
+            } else if (n.value == "hero6") {
+                window.location.href = "hero6_info.html"
+            }
+            else if (n.value == "d850") {
+                window.location.href = "D850_info.html"
+            }
+            else if (n.value == "g9x") {
+                window.location.href = "g9x_info.html"
+            }
+            else if (n.value == "rx100") {
+                window.location.href = "rx100_info.html"
+            }
+
+        }
+    </script>
+    <style>
+
+       #content{
+
+            width:1200px;
+            margin:0 auto;
+            height:1000px;
+            position:relative;
+
+
+        }
+         #content div{
+            position:absolute;
+            width:100%;
+            height:100%;
+            border:2px  dashed black;
+            background-color:gainsboro;
+
+        }
+    
+         #picture{
+             position:absolute;
+             top:20px;
+             left:20px;
+             border:1px solid black;
+         }
+
+         #link{
+             position:absolute;
+             top:400px;
+             left:20px;
+         }
+         
+         #heart{
+             position:absolute;
+             top:288px;
+             left:255px;
+             width:35px;
+             height:35px;
+         }
+
+
+         #content div p{
+             position:absolute;
+             top:280px;
+             left:38px;
+             font-weight:bold;
+             background: pink;
+             margin:5px;
+             padding:10px 60px;
+             border:1px solid black;
+             text-shadow: 0px 0px 5px #ccc;
+         }
+
+         #content div table{
+             position:absolute;
+             top:20px;
+             left:330px;
+             width:500px;
+             height:300px;
+             border-collapse:collapse;
+             text-align:center;
+             vertical-align:middle;
+             border-right:none;
+            
+         }
+         td{
+             border-bottom:1px solid #ccc;
+         }
+         td:nth-child(1){
+             background:black;
+             color:white;
+         }
+        
+         td:nth-child(even){
+             background:darkgray;
+             color:black;
+             font-weight:bold;
+             
+         }
+         td:nth-child(3),:nth-child(5){
+             background-color:azure;
+             font-weight:bold;
+         }
+        #spec td:nth-child(3):hover,#spec td:nth-child(5):hover{
+             background:yellow;
+         }
+
+
+    </style>
+    <script>
+        var value=true;
+        function ch(obj) {
+            if (value) {
+                obj.src = "../material/heart2.png";
+                value = false;
+            }
+            else {
+                obj.src = "../material/heart1.png";
+                value = true;
+            }
+        }
+    
+    </script>
+
+</head>
+<body>
+    <header id="main_header">
+        <h3> 누구나 배울 수 있는</h3>
+        <input type="text" id="research" onchange="move();" />
+        <input type="button" value="검색" style="color:blue" onclick="move();" />
+        <a href="../index_최해랑.html"><h1>카메라 사전</h1></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Category.html">제품 카테고리</a>
+                    <ol style="z-index:100;">
+                        <li><a href='category_dslr.html'>DSLR</a></li>
+                        <li><a href='Category.html'>미러리스</a></li>
+                        <li><a href='category_compact.html'>컴팩트</a></li>
+                        <li><a href='category_actioncam.html'>액션캠 / 캠코더</a></li>
+                    </ol>
+
+                </li>
+
+                <li> <a href="../dictionary/camera_info.html">카메라 용어사전</a></li>
+                <li><a href="../recommend/site.html">추천 사이트</a></li>
+                <li><a href="../login/login.html">로그인</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <hr />
+
+    <section id="content">
+        <div>
+            <img src="../material/D850.png" width="250" height="250" alt="사진없음" id="picture" />
+            <p> 니콘 / D850 </p>
+            <img src="../material/heart1.png" alt="사진없음" id="heart" onclick="ch(this);"/>
+            <table border="1" id="spec">
+
+                <tr><td>기본사양</td><td>품목</td><td> DSLR </td><td></td><td></td></tr>
+                <tr><td>이미지 센서</td><TD>유효화소</TD><td>2420만 화소</td><td>CMOS</td><td>APS-C(1:1.6크롭)</td></tr>
+                <tr><td>감도</td><td>ISO</td><td>100~25600</td><td></td><td></td></tr>
+                <tr><td>초점</td><td>초점방식</td><td>듀얼 픽셀 AF</td><td>초점 영역</td><td>49개</td></tr>
+                <tr><td>셔터</td><td>스피드</td><td>1/4000초</td><td>연사</td><td>초당6.1장</td></tr>
+                <tr><td>동영상</td><tD>해상도</tD><td>FULL-HD</td><td>프레임</td><td>60프레임</td></tr>
+
+            </table>
+            <a href="./../material/리뷰페이지.png" id="link" target="#link">
+                <img src="../material/리뷰링크.png" />
+            </a>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+</body>
+</html>

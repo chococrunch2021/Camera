@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+   
+    <link href="../material/공통스타일.css" type="text/css" rel="stylesheet" />
+ 
+    <script>
+
+    function move_join() {
+
+        window.location.href = "./join/회원가입페이지.html"
+
+    }
+
+    </script>
+    <script>
+        win = null;
+        function move() {
+            var n = document.getElementById("research");
+
+            if (n.value == "a700") {
+                window.location.href = "../category/a700_info.html"
+            }
+            else if (n.value == "m100") {
+                window.location.href = "../category/m100_info.html"
+            }
+            else if (n.value == "mark5") {
+
+                window.location.href = "../category/마크5_info.html"
+            }
+            else if (n.value == "a9") {
+                window.location.href = "../category/알파나인_info.html"
+            } else if (n.value == "hero6") {
+                window.location.href = "../category/hero6_info.html"
+            }
+            else if (n.value == "d850") {
+                window.location.href = "../category/D850_info.html"
+            }
+            else if (n.value == "g9x") {
+                window.location.href = "../category/g9x_info.html"
+            }
+            else if (n.value == "rx100") {
+                window.location.href = "../category/rx100_info.html"
+            }
+
+        }
+
+    </script>
+
+    
+    <style>
+        #mainsection{
+            margin:0 auto;
+            width:960px;
+            height:300px;
+            position:relative;
+
+        }
+        #mainsection h1{
+            position:absolute;
+            left:10%;
+            margin:5%;
+            font-size:400%;
+        }
+        #mainsection form{
+            position:absolute;
+            
+            left:40%;
+            top:52%;
+            text-align:right;
+        }
+        #mainsection form input[type=text]{
+          margin-bottom:10px;
+        }
+        #mainsection form input[type=button]{
+          margin:20px 20px;
+        }
+
+
+    </style>
+    <style>
+        #id:focus,#passwd:focus{
+            font-size:120%;
+        }
+
+    </style>
+  
+
+</head>
+<body>
+    <header id="main_header">
+        <h3> 누구나 배울 수 있는</h3>
+        <input type="text" id="research" onchange="move();" />
+        <input type="button" value="검색" style="color:blue" onclick="move();" />
+        <a href="../index_최해랑.html" style="color:black;"><h1>카메라 사전</h1></a>
+        <nav>
+            <ul>
+                <li><a href="../category/Category.html">제품 카테고리</a>
+                    <ol style="z-index:10">
+                        <li><a href='../category/category_dslr.html'>DSLR</a></li>
+                        <li><a href='../category/Category.html'>미러리스</a></li>
+                        <li><a href='../category/category_compact.html'>컴팩트</a></li>
+                        <li><a href='../category/category_actioncam.html'>액션캠 / 캠코더</a></li>
+                    </ol>
+                </li>
+                <li> <a href="../dictionary/camera_info.html">카메라 용어사전</a></li>
+                <li><a href="../recommend/site.html">추천 사이트</a></li>
+                <li><a href="login.html" target="_blank">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <section id="mainsection">
+        <h1>Log In</h1>
+        <form name="fo" method="get">
+            <label>ID: <input type="text" size="15" value="gofkdvjvl" id="id"/></label><br />
+            <label>PASSWORD: <input type="password" size="15" value="*******" id="passwd" /></label><br />
+            <input type="button"  value="로그인" onclick="alert('로그인 되었습니다.');" />
+            <input type="button" value="회원가입" onclick="alert('회원가입페이지로 이동합니다.');move_join();" />
+        
+        
+         </form>
+    </section>
+</body> 
+</html>

@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../material/공통스타일.css" type="text/css" rel="stylesheet" />
+    <script>
+        win = null;
+        function move() {
+            var n = document.getElementById("research");
+
+            if (n.value == "a700") {
+                window.location.href = "../category/a700_info.html"
+            }
+            else if (n.value == "m100") {
+                window.location.href = "../category/m100_info.html"
+            }
+            else if (n.value == "mark5") {
+
+                window.location.href = "../category/마크5_info.html"
+            }
+            else if (n.value == "a9") {
+                window.location.href = "../category/알파나인_info.html"
+            } else if (n.value == "hero6") {
+                window.location.href = "../category/hero6_info.html"
+            }
+            else if (n.value == "d850") {
+                window.location.href = "../category/D850_info.html"
+            }
+            else if (n.value == "g9x") {
+                window.location.href = "../category/g9x_info.html"
+            }
+            else if (n.value == "rx100") {
+                window.location.href = "../category/rx100_info.html"
+            }
+
+        }
+
+    </script>
+    <style>
+        @keyframes change{
+            from{ transform:scale(0,1); }
+            30%{  transform:scale(1,1);}
+             60%{  transform:scale(1,0.5);   }
+            to{transform:scale(0,0.5);}
+        }
+
+        #main_nav{
+            width:1100px;
+            height:500px;
+            position:relative;
+            border:1px solid black;
+            margin:20px auto;
+        }
+        #main_nav p{
+            text-shadow:0px 0px 2px darkslateblue;
+        }
+        #site1{
+            float:left;
+            margin-top:30px;
+            margin-left:30px;
+            width:400px;
+            height:350px;
+            border:2px solid pink;
+            padding:30px;
+         
+            
+
+        }
+        #site1 form{
+            border-color:orange;
+        }
+        #site1 fieldset{
+            padding:10px 20px 10px 20px;
+            margin-bottom:20px;
+            border:15px inset;
+            
+        }
+        #site2{
+            float:right;
+            margin-right:30px;
+            margin-top:30px;
+            width:420px;
+            height:350px;
+            border:2px solid orange;
+            padding:30px;
+
+        }
+        #site2 fieldset{
+            padding:10px 20px;
+            border:15px outset;
+           
+        }
+          
+        #main_footer {
+            width:1300px;
+            margin:20px auto;
+            height:300px;
+            
+        }
+        #main_footer aside{
+            
+            margin:0 auto;
+            
+
+        }
+        #main_footer aside img{
+            animation-name:change;
+            animation-duration:10s;
+            animation-iteration-count:infinite;
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+    <header id="main_header">
+        <h3> 누구나 배울 수 있는</h3>
+        <input type="text" id="research" onchange="move();" />
+        <input type="button" value="검색" style="color:blue" onclick="move();" />
+        <a href="../index_최해랑.html"><h1>카메라 사전</h1></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../category/Category.html">제품 카테고리</a>
+                    <ol style="z-index:10">
+                        <li><a href='../category/category_dslr.html'>DSLR</a></li>
+                        <li><a href='../category/Category.html'>미러리스</a></li>
+                        <li><a href='../category/category_compact.html'>컴팩트</a></li>
+                        <li><a href='../category/category_actioncam.html'>액션캠 / 캠코더</a></li>
+                    </ol>
+
+                </li>
+
+                <li> <a href="../dictionary/camera_info.html">카메라 용어사전</a></li>
+                <li><a href="site.html">추천 사이트</a></li>
+                <li><a href="../login/login.html">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <nav id="main_nav">
+        <nav id="site1">
+            <form>
+                <fieldset>
+                    <legend style="padding:7px;color:darkslateblue;font-weight:bold"> 제조사 </legend>
+                    <p>&bull; 소니: <a href="https://www.sony.co.kr/alpha" target="_self">www.sony.co.kr/alpha</a><br /></p> 
+                    <p>&bull; 캐논: <a href="https://www.canon-ci.co.kr" target="_self">www.canon-ci.co.kr</a><br /></p>
+                    <p>&bull; 니콘: <a href="https://www.nikon-image.co.kr" target="_self">www.nikon-image.co.kr</a><br /></p>
+                    <br />
+                    
+                </fieldset>
+                </form>
+                <form>
+                    <fieldset>
+                        <legend style="padding:7px;color:darkslateblue;font-weight:bold"> 중고거래사이트 </legend>
+                        <p>&bull; 럭키카메라: <a href="https://7camera.kr" target="_self">7camera.kr/</a><br /></p>
+                        <p>&bull; 유에이카메라: <a href="https://www.uacamera.com" . target="_self">www.uacamera.com</a><br /></p>
+                        <p>&bull; 중고파크: <a href="https://www.joonggopark.com" target="_self">www.joonggopark.com</a><br /></p>
+                        <br />
+
+                    </fieldset>
+
+                </form>
+                <br />
+
+                
+
+
+        </nav>
+        <nav id="site2">
+            <form>
+                <fieldset>
+                    <legend style="padding:7px;color:darkslateblue;font-weight:bold;"> 카페 &amp; 블로그 </legend>
+                    <p>&bull; 디카갤러리: <a href="https://cafe.naver.com/temadica" target="_self">cafe.naver.com/temadica</a><br /></p>
+                    <p>&bull; 영웅바디: <a href="https://cafe.naver.com/canon550d" . target="_self">cafe.naver.com/canon550d"www.uacamera.com</a><br /></p>
+                    <p>&bull; SLR: <a href="https://www.slrclub.com" target="_self">www.slrclub.com</a><br /></p>
+                    <br />
+
+                </fieldset>
+
+            </form>
+            <br />
+
+
+        </nav>
+        
+    </nav>
+
+    <footer id="main_footer">
+        <aside>
+            <img src="../material/광고사진.jpg" alt="사진없음" width="1300" height="300" />
+        </aside>
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+    <link href="./material/공통스타일.css" type="text/css" rel="stylesheet" />
+    <script>
+        win = null;
+        function move() {
+            var n = document.getElementById("research");
+
+            if (n.value == "a700") {
+                window.location.href = "./category/a700_info.html"
+            }
+            else if (n.value == "m100") {
+                window.location.href = "./category/m100_info.html"
+            }
+            else if (n.value == "mark5") {
+
+                window.location.href = "./category/마크5_info.html"
+            }
+            else if (n.value == "a9") {
+                window.location.href = "./category/알파나인_info.html"
+            } else if (n.value == "hero6") {
+                window.location.href = "./category/hero6_info.html"
+            }
+            else if (n.value == "d850") {
+                window.location.href = "./category/D850_info.html"
+            }
+            else if (n.value == "g9x") {
+                window.location.href = "./category/g9x_info.html"
+            }
+            else if (n.value == "rx100") {
+                window.location.href = "./category/rx100_info.html"
+            }
+
+        }
+
+    </script>
+
+
+    <style>
+        #content{
+            width:960px;
+            margin:0 auto;
+            height:320px;
+            position:relative;
+           
+        }
+        #content div{
+            position:absolute;
+            width:80%;
+            left:10%;
+            top:7%;
+            border:10px ridge;
+            background-color:gainsboro;
+
+        }
+        #content div ul{
+            overflow:hidden;
+            
+        }
+
+            #content div ul li {
+                float: left;
+                text-align: center;
+            }
+
+        #content div ul li a{
+            display:block;
+            padding:5px;
+            border:1px solid red;
+            margin:30px 60px 10px 60px;
+
+
+        }
+
+    </style>
+
+
+    <style>
+        #main_footer {
+            width: 960px;
+            margin: 100px auto;
+            height: 40px;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            border:none;
+            background-color:beige;
+            color:black;
+            text-shadow:0px 0px 3px brown;
+            border:1px groove;
+        }
+
+            #main_footer section {
+                left: 35%;
+                top: 30%;
+                position: absolute;
+                padding:1px;
+                
+                
+            }
+    </style>
+
+
+
+
+</head>
+<body>
+    <header id="main_header">
+        <h3> 누구나 배울 수 있는</h3>
+        <a href="index_최해랑.html"><h1>카메라 사전</h1></a>
+        <input type="text" id="research" onchange="move();" />
+        <input type="button" value="검색" style="color:blue" onclick="move();" />
+        <nav>
+            <ul>
+                <li><a href="./category/Category.html">제품 카테고리</a>
+                    <ol style="z-index:10">
+                        <li><a href='./category/category_dslr.html'>DSLR</a></li>
+                        <li><a href='./category/Category.html'>미러리스</a></li>
+                        <li><a href='./category/category_compact.html'>컴팩트</a></li>
+                        <li><a href='./category/category_actioncam.html'>액션캠 / 캠코더</a></li>
+                    </ol>
+                
+                </li>
+                
+                <li> <a href="./dictionary/camera_info.html">카메라 용어사전</a></li>
+                <li><a href="./recommend/site.html">추천 사이트</a></li>
+                <li><a href="./login/login.html">로그인</a></li>
+            </ul>
+        </nav>
+        
+        
+     
+        
+        
+            
+        
+    </header>
+
+    <hr />
+    <section id="content" style="z-index:1">
+        <div>
+            <ul>
+                <li>
+                    <a href="./category/알파나인_info.html" target="_blank"><img src="./material/알파나인.png" /></a>
+                    <p>SONY / A9<br />
+                    미러리스 카메라</p>
+                    
+                </li>
+
+
+                <li>
+                    <a href="./category/m100_info.html"><img src="./material/캐논M100.png" /></a>
+                    <p style="margin-bottom:10px;">CANON / EOS M100
+<br />
+                    미러리스 카메라</p>
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer id="main_footer">
+        <section>홈페이지 관리자 연락처:  gofkdvjvl@naver.com</section>
+    </footer>
+
+
+
+</body>
+</html>
